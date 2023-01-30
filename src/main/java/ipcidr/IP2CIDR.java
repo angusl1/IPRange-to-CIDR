@@ -1,10 +1,8 @@
 package ipcidr;
 
+import java.util.List;
+import java.util.ArrayList;
 public class IP2CIDR {
-
-    public static void main(String[] args) {
-        System.out.println(range2cidrlist("5.104.109.160", "5.104.109.191"));
-    }
 
     public static List<String> range2cidrlist( String startIp, String endIp ) {
         long start = ipToLong(startIp);
