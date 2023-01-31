@@ -46,7 +46,7 @@ public class IP2CIDR {
         long[] ip = new long[4];
         String[] ipSec = strIP.split("\\.");
         for (int k = 0; k < 4; k++) {
-            ip[k] = Long.valueOf(ipSec[k]);
+            ip[k] = Long.valueOf(ipSec[k]).longValue();
         }
 
         return (ip[0] << 24) + (ip[1] << 16) + (ip[2] << 8) + ip[3];
